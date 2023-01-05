@@ -191,3 +191,6 @@ section{
   .verde{
     background-color: #32B72F;
   }
+  .precoreal{
+    display: none;
+  }
