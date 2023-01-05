@@ -16,12 +16,13 @@
             <div class="subtitulo_restaurante">Sua comida em 6 minutos</div> 
         </div>
     </header>
+    <main>
     <section class="first">
         <div class="titulo-secao">
              Primeiro, seu prato
         </div>
         <div class="container-scroll disable-scrollbars">
-            <div class="opcao">
+            <div class="opcao frango" onclick="selecionar('.frango')">
                 <div class="imagem">
                 <img src="img/frango_yin_yang.png" alt="frango_yin_yang">
                 </div>
@@ -35,7 +36,7 @@
                     R$ 14,90
                 </div>
             </div> <!--final div opcao-->
-            <div class="opcao">
+            <div class="opcao hamburguer" onclick="selecionar('.hamburguer')">
                 <div class="imagem">
                 <img src="img/hamburguer.jpg" alt="hamburguer">
                 </div>
@@ -49,7 +50,7 @@
                     R$ 21,90
                 </div>
             </div> <!--final div opcao-->
-            <div class="opcao">
+            <div class="opcao bife" onclick="selecionar('.bife')">
                 <div class="imagem">
                 <img src="img/bife.jpg" alt="bife">
                 </div>
@@ -71,7 +72,7 @@
              Agora, sua bebida
         </div>
         <div class="container-scroll disable-scrollbars">
-            <div class="opcao">
+            <div class="opcao coca" onclick="selecionar('.coca')">
                 <div class="imagem">
                 <img src="img/coca-cola.png" alt="coca-cola">
                 </div>
@@ -85,7 +86,7 @@
                     R$ 4,90
                 </div>
             </div> <!--final div opcao-->
-            <div class="opcao">
+            <div class="opcao guarana" onclick="selecionar('.guarana')">
                 <div class="imagem">
                 <img src="img/guarana.jpg" alt="guarana">
                 </div>
@@ -99,7 +100,7 @@
                     R$ 7,90
                 </div>
             </div> <!--final div opcao-->
-            <div class="opcao">
+            <div class="opcao suco" onclick="selecionar('.suco')">
                 <div class="imagem">
                 <img src="img/suco.jpeg" alt="suco de laranja">
                 </div>
@@ -121,7 +122,7 @@
              Por fim, sua sobremesa
         </div>
         <div class="container-scroll disable-scrollbars">
-            <div class="opcao">
+            <div class="opcao pudim" onclick="selecionar('.pudim')">
                 <div class="imagem">
                 <img src="img/pudim.png" alt="pudim">
                 </div>
@@ -135,7 +136,7 @@
                     R$ 7,90
                 </div>
             </div> <!--final div opcao-->
-            <div class="opcao">
+            <div class="opcao sorvete" onclick="selecionar('.sorvete')">
                 <div class="imagem">
                 <img src="img/sorvete.jpg" alt="sorvete">
                 </div>
@@ -149,7 +150,7 @@
                     R$ 5,90
                 </div>
             </div> <!--final div opcao-->
-            <div class="opcao">
+            <div class="opcao acai" onclick="selecionar('.acai')">
                 <div class="imagem">
                 <img src="img/creme-de-acai.jpg" alt="creme-de-acai">
                 </div>
@@ -166,6 +167,7 @@
         </div> <!--final container scroll-->
         
     </section> <!--final da secao-->
+</main>
     <footer>
         <button>Selecione os 3 itens <br>para fechar o pedido</button>
     </footer>
