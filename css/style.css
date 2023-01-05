@@ -188,3 +188,6 @@ section{
   .checkSelecionado-f3{
     display: block;
   }
+  .verde{
+    background-color: #32B72F;
+  }

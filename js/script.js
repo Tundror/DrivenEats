@@ -11,6 +11,7 @@ function selecionar1(opcaoSelecionada, idCheck){
     }
     const checkSelecionado = document.querySelector(idCheck);
     checkSelecionado.classList.add('checkSelecionado-f1');
+    enableButton();
 }
 function selecionar2(opcaoSelecionada, idCheck){
     const botaoAnterior = document.querySelector('.selecionado-f2');
@@ -25,6 +26,7 @@ function selecionar2(opcaoSelecionada, idCheck){
     }
     const checkSelecionado = document.querySelector(idCheck);
     checkSelecionado.classList.add('checkSelecionado-f2');
+    enableButton();
 }
 function selecionar3(opcaoSelecionada, idCheck){
     const botaoAnterior = document.querySelector('.selecionado-f3');
@@ -39,4 +41,18 @@ function selecionar3(opcaoSelecionada, idCheck){
     }
     const checkSelecionado = document.querySelector(idCheck);
     checkSelecionado.classList.add('checkSelecionado-f3');
+    enableButton();
+}
+function enableButton(){
+    const selecaoum = document.querySelector('.selecionado-f1');
+    const selecaodois = document.querySelector('.selecionado-f2');
+    const selecaotres = document.querySelector('.selecionado-f3');
+    if(selecaoum !== null && selecaodois !== null && selecaotres !== null)
+    {
+        document.querySelector('button').disabled = false;
+        const botao = document.querySelector('button');
+        botao.classList.add('verde');
+        botao.textContent = "Fechar pedido"
+        console.log(botao);
+    }
 }
