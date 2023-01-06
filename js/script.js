@@ -159,4 +159,5 @@ function condicaotres(comidatres){
 }
 function cancelar(){
     document.querySelector(".confirmar").classList.remove("aparecer");
+    document.querySelector(".opaco").classList.remove("aparecerdois");
 }
