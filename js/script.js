@@ -81,7 +81,9 @@ function confirmarpedido(){
     document.querySelector('.pedidotres-dois').innerHTML=document.querySelector('.selecionado-f3 .preco').innerHTML;
     document.querySelector('.pedidototal-dois').innerHTML="R$ " + s;
     document.querySelector('.confirmar').classList.add('aparecer');
-    document.querySelector('.opaco').classList.add('aparecer');
+    const fundobranco = document.querySelector('.opaco');
+    fundobranco.classList.add('aparecerdois');
+    console.log(fundobranco);
 }
 function pedido(){
     const precoum = document.querySelector('.selecionado-f1 .precoreal');
