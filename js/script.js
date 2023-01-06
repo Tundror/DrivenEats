@@ -63,7 +63,6 @@ function pedido(){
     const precorealdois = Number(precodois.textContent);
     const precorealtres = Number(precotres.textContent);
     const total = precorealdois + precorealtres + precorealum;
-    const totalreal = total.toFixed(2);
     const comidaum = document.querySelector('.selecionado-f1 .titulo-comida');
     const comidadois = document.querySelector('.selecionado-f2 .titulo-comida');
     const comidatres = document.querySelector('.selecionado-f3 .titulo-comida');
@@ -72,7 +71,7 @@ function pedido(){
     let textoComidaDois=condicaodois(comidadois);
     let textoComidaTres=condicaotres(comidatres);
     console.log(textoComidaUm);
-    let link = "https://wa.me/5518999999999?text=Ol%c3%a1%2c+gostaria+de+fazer+o+pedido%3a%0d%0a-+Prato%3a+" + textoComidaUm + "%0d%0a-+Bebida%3a+" + textoComidaDois + "%0d%0a-+Sobremesa%3a+" + textoComidaTres + "%0d%0aTotal%3a+R%24+" + totalreal;
+    let link = "https://wa.me/5518999999999?text=Ol%c3%a1%2c+gostaria+de+fazer+o+pedido%3a%0d%0a-+Prato%3a+" + textoComidaUm + "%0d%0a-+Bebida%3a+" + textoComidaDois + "%0d%0a-+Sobremesa%3a+" + textoComidaTres + "%0d%0aTotal%3a+R%24+" + total;
     console.log(link);
     document.querySelector('a').href = link;
 }
