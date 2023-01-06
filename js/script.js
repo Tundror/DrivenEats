@@ -100,7 +100,7 @@ function pedido(){
     const comidadois = document.querySelector('.selecionado-f2 .titulo-comida');
     const comidatres = document.querySelector('.selecionado-f3 .titulo-comida');
     const nome = prompt("Digite seu nome");
-    const endereco = prompt("Digite seu endereco");
+    const endereco = prompt("Digite seu endereço");
     const nomeurl = nome.replaceAll(' ', '+');
     const enderecourl = endereco.replaceAll(' ', '+');
     let textoComidaUm=condicaoum(comidaum);
