@@ -11,6 +11,7 @@
 </head>
 <body>
     <header>
+        <div class="opaco"></div>
         <div class="container-header">
             <div class="nome_restaurante">DrivenEats</div>
             <div class="subtitulo_restaurante">Sua comida em 6 minutos</div> 
@@ -30,9 +31,7 @@
                 <div class="subtitulo-comida">
                     Um pouco de batata, um pouco de salada
                 </div>
-                <div data-test="item-price" class="preco">
-                    R$ 14,90
-                </div>
+                <div data-test="item-price" class="preco">R$ 14,90</div>
                 <div class="precoreal"> 14.90</div>
                 <ion-icon id="f1-c1" class="check" name="checkmark-circle"></ion-icon>
             </div> <!--final div opcao-->
@@ -44,9 +43,7 @@
                 <div class="subtitulo-comida">
                     Delicioso hamburguer artesanal
                 </div>
-                <div data-test="item-price" class="preco">
-                    R$ 21,90
-                </div>
+                <div data-test="item-price" class="preco">R$ 21,90</div>
                 <div class="precoreal">21.90</div>
                 <ion-icon id="f1-c2" class="check" name="checkmark-circle"></ion-icon>
             </div> <!--final div opcao-->
@@ -58,9 +55,7 @@
                 <div class="subtitulo-comida">
                     Bife bem passado com cebola
                 </div>
-                <div data-test="item-price" class="preco">
-                    R$ 17,90
-                </div>
+                <div data-test="item-price" class="preco">R$ 17,90</div>
                 <div class="precoreal">17.90</div>
                 <ion-icon id="f1-c3" class="check" name="checkmark-circle"></ion-icon>
             </div> <!--final div opcao-->
@@ -80,9 +75,7 @@
                 <div class="subtitulo-comida">
                     Lata 350ml
                 </div>
-                <div data-test="item-price" class="preco">
-                    R$ 4,90
-                </div>
+                <div data-test="item-price" class="preco">R$ 4,90</div>        
                 <div class="precoreal">4.90</div>
                 <ion-icon id="f2-c1" class="check" name="checkmark-circle"></ion-icon>
             </div> <!--final div opcao-->
@@ -94,9 +87,7 @@
                 <div class="subtitulo-comida">
                     Garrafa 600ml
                 </div>
-                <div data-test="item-price" class="preco">
-                    R$ 7,90
-                </div>
+                <div data-test="item-price" class="preco">R$ 7,90</div>
                 <div class="precoreal">7.90</div>
                 <ion-icon id="f2-c2" class="check" name="checkmark-circle"></ion-icon>
             </div> <!--final div opcao-->
@@ -108,9 +99,7 @@
                 <div class="subtitulo-comida">
                     500ml de suco natural
                 </div>
-                <div data-test="item-price" class="preco">
-                    R$ 9,90
-                </div>
+                <div data-test="item-price" class="preco">R$ 9,90</div>
                 <div class="precoreal">9.90</div>
                 <ion-icon id="f2-c3" class="check" name="checkmark-circle"></ion-icon>
             </div> <!--final div opcao-->
@@ -130,9 +119,7 @@
                 <div class="subtitulo-comida">
                     Apenas pudim
                 </div>
-                <div data-test="item-price" class="preco">
-                    R$ 7,90
-                </div>
+                <div data-test="item-price" class="preco">R$ 7,90</div>
                 <div class="precoreal">7.90</div>
                 <ion-icon id="f3-c1" class="check" name="checkmark-circle"></ion-icon>
             </div> <!--final div opcao-->
@@ -144,9 +131,7 @@
                 <div class="subtitulo-comida">
                     Pote com sorvete
                 </div>
-                <div data-test="item-price" class="preco">
-                    R$ 5,90
-                </div>
+                <div data-test="item-price" class="preco">R$ 5,90</div>
                 <div class="precoreal">5.90</div>
                 <ion-icon id="f3-c2" class="check" name="checkmark-circle"></ion-icon>
             </div> <!--final div opcao-->
@@ -158,19 +143,45 @@
                 <div class="subtitulo-comida">
                     500ml de creme de acai
                 </div>
-                <div data-test="item-price" class="preco">
-                    R$ 9,90
-                </div>
+                <div data-test="item-price" class="preco">R$ 9,90</div>
                 <div class="precoreal">9.90</div>
                 <ion-icon id="f3-c3" class="check" name="checkmark-circle"></ion-icon>
             </div> <!--final div opcao-->
         </div> <!--final container scroll-->
-        
     </section> <!--final da secao-->
 </main>
     <footer>
-           <a href=""><button data-test="order-btn"  onclick = "pedido()" disabled>Selecione os 3 itens <br>para fechar o pedido</button></a>
+           <button class="botao-footer" data-test="order-btn"  onclick = "confirmarpedido()" disabled>Selecione os 3 itens <br>para fechar o pedido</button>
     </footer>
+<div data-test="confirm-order-modal" class="confirmar">
+    <div class="container-confirmar">
+        <div class="confirmePedido">Confirme seu pedido</div>
+        <div class="container-coluna">
+            <div class="pedidoum">
+                <div class="pedidoum-um">a</div>
+                <div class="pedidoum-dois">a</div>
+            </div>
+            <div class="pedidoum">
+                <div class="pedidodois-um">a</div>
+                <div class="pedidodois-dois">a</div>
+            </div>
+            <div class="pedidoum">
+                <div class="pedidotres-um">a</div>
+                <div class="pedidotres-dois">a</div>
+            </div>
+            <div class="pedidototal">
+                <div class="pedidototal-um">TOTAL</div>
+                <div class="pedidototal-dois">a</div>
+            </div>
+        </div>
+        <div class="container-coluna-total">
+            <div class="coluna-total-um"></div>
+            <div class="coluna-total-dois"></div>
+        </div>
+        <a href=""><button data-test="confirm-order-btn" onclick="pedido()" class="podePedir">Tudo certo, pode pedir!</button></a>
+        <button data-test="cancel-order-btn" onclick="cancelar()" class="cancelar">Cancelar</button>
+    </div>
+</div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="./js/script.js"></script>
 </body>
